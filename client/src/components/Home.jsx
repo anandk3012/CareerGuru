@@ -8,6 +8,7 @@ import AdminLoginModal from "./AdminLoginModal";
 import { useNavigate } from "react-router-dom";
 import "./Home.css"
 
+
 function Home() {
   const [examState, setExamState] = useState("landing");
   const [studentInfo, setStudentInfo] = useState(null);
@@ -28,7 +29,7 @@ function Home() {
 
   const submitResults = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/submit-results", {
+      const response = await fetch("careerguru-server.vercel.app/api/submit-results", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
