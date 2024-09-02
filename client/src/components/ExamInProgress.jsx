@@ -184,7 +184,7 @@ function ExamInProgress({ studentInfo, onEnd }) {
 
     try {
       setLoading(true);
-      const response = await fetch("careerguru-server.vercel.app/api/submit-exam", {
+      const response = await fetch("https://careerguru-frg5.onrender.com/api/submit-exam", {
         method: "POST",
         body: formData,
       });

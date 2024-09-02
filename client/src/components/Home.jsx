@@ -29,7 +29,7 @@ function Home() {
 
   const submitResults = async () => {
     try {
-      const response = await fetch("careerguru-server.vercel.app/api/submit-results", {
+      const response = await fetch("https://careerguru-frg5.onrender.com/api/submit-results", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
