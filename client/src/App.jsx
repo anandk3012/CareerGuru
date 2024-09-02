@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import RootLayout from './RootLayout.js';
+import RootLayout from './RootLayout.jsx';
 import Home from './components/Home.jsx';
 import Login from './components/Login.jsx';
 
